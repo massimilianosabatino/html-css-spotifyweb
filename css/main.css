@@ -3,3 +3,24 @@
     background-color: #141922;
     padding: 6.875rem 1.25rem 0 1.25rem;
 }
+
+#tabs h3 {
+    font-size: .8125rem;
+    font-weight: 600;
+    color: var(--text-color);
+    padding: 0 1.25rem;
+    text-transform: uppercase;
+}
+
+article {
+    width: calc(100% / 2);
+    padding: 0 .625rem;
+}
+.cover-art {
+    max-width: 13.4375rem;
+}
+
+.cover-art img {
+    max-width: 100%;
+    object-fit: cover;
+}

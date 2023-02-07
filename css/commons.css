@@ -2,6 +2,19 @@
     display: flex;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-content: center;
+}
+
 .wrap {
     flex-wrap: wrap;
 }
@@ -16,4 +29,8 @@
 
 .center {
     margin: 0 auto;
+}
+
+.container {
+    margin: 0 -0.625rem;
 }
