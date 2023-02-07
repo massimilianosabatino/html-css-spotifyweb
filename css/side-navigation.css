@@ -1,0 +1,10 @@
+#side-nav {
+    min-width: 3.125rem;
+    background-color: #000;
+    height: calc(100vh - 5.625rem);
+    padding: .3125rem .625rem .625rem .625rem;
+}
+
+.logo {
+    display: block;
+}

@@ -1,0 +1,8 @@
+header {
+    height: 5.625rem;
+    width: calc(100% - 3.125rem);
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+}
