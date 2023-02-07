@@ -5,3 +5,15 @@
 .wrap {
     flex-wrap: wrap;
 }
+
+.align-start {
+    align-content: flex-start;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.center {
+    margin: 0 auto;
+}

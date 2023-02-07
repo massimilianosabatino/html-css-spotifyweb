@@ -5,6 +5,13 @@
 @import 'footer.css';
 
 /*
+*  Variabili
+*/
+:root {
+    --text-color: #7D7F84
+}
+
+/*
 *  Reset
 */
 * {
@@ -30,9 +37,6 @@ ul {
     list-style: none;
 }
 
-:root {
-    --text-color: #7D7F84
-}
 
 /*
 *  Debug

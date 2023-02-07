@@ -6,27 +6,47 @@
 }
 
 #side-nav nav .navigation span,
-#side-nav nav .playlist li,
-#side-nav nav .playlist h3,
+#side-nav nav .playlist,
 #side-nav nav .profile span,
 #side-nav nav .profile h3 {
     display: none;
 }
 
-.logo {
-    display: block;
+/*** LOGO ***/
+.logo-link {
+    width: 100%;
     margin-bottom: .9375rem;
 }
-#side-nav nav {
-    height: 100%;
+
+.logo {
+    display: block;
+    max-width: 1.875rem;
 }
 
-nav ul {
+/*** Navigation ***/
+nav {
+    width: 100%;
+    height: calc(100% - 2.8125rem);
+}
+
+nav img {
+    max-height: 1.5625rem;
+}
+
+nav > * {
     width: 100%;
 }
 
 .navigation li {
     margin: .75rem 0;
+}
+
+/*** Playlist ***/
+
+
+/*** Profile ***/
+.profile {
+    align-self: flex-end;
 }
 
 .profile-ico {
@@ -36,6 +56,35 @@ nav ul {
     background-color: grey;
 }
 
-nav ul.profile {
-
+.profile a:first-child li {
+    text-align: center;
+    padding-bottom: calc(1.25rem / 2);
+    margin-bottom: 1.25rem;
+    border-bottom: 1px solid var(--text-color);
 }
+.profile a:first-child li img {
+    max-width: .75rem;
+}
+
+@media  screen and (min-width: 552px) {
+    #side-nav {
+        min-width: 14.375rem;
+        padding: 1.25rem 1.25rem .625rem 1.25rem;
+    }
+
+    #side-nav nav .navigation span,
+    #side-nav nav .playlist,
+    #side-nav nav .profile span,
+    #side-nav nav .profile h3 {
+            display: initial;   
+    }
+
+    .profile a:first-child li {
+        text-align: inherit;
+    }
+}
+
+
+
+
+
