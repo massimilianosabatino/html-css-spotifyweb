@@ -5,6 +5,37 @@
     padding: .3125rem .625rem .625rem .625rem;
 }
 
+#side-nav nav .navigation span,
+#side-nav nav .playlist li,
+#side-nav nav .playlist h3,
+#side-nav nav .profile span,
+#side-nav nav .profile h3 {
+    display: none;
+}
+
 .logo {
     display: block;
+    margin-bottom: .9375rem;
+}
+#side-nav nav {
+    height: 100%;
+}
+
+nav ul {
+    width: 100%;
+}
+
+.navigation li {
+    margin: .75rem 0;
+}
+
+.profile-ico {
+    width: 1.5625rem;
+    height: 1.5625rem;
+    border-radius: 50%;
+    background-color: grey;
+}
+
+nav ul.profile {
+
 }

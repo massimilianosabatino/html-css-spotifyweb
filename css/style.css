@@ -15,16 +15,24 @@
 
 a {
     text-decoration: none;
+    color: var(--text-color);
 }
 
 a:hover {
     text-decoration: none;
 }
 
+/* a:active {
+    color: var(--text-color);
+} */
+
 ul {
     list-style: none;
 }
 
+:root {
+    --text-color: #7D7F84
+}
 
 /*
 *  Debug
