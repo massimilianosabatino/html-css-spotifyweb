@@ -16,7 +16,7 @@
 
 .ico {
     max-width: 1rem;
-    max-height: 1rem;
+    /* max-height: 1rem; */
 }
 
 #control-nav div:not(.shortcuts) .ico {
@@ -25,30 +25,49 @@
 
 .ico-big {
     max-width: 1.875rem;
-    max-height: 1.875rem;
+    /* max-height: 1.875rem; */
     filter: invert(1);
 }
 
+.control-left {
+    /* min-width: 8.75rem; */
+    margin-right: auto;
+}
+
 .current {
-    max-width: 5.625rem;
+    min-width: 5.625rem;
     align-items: center;
     /* flex: 1 1 5.625rem; */
     /* flex-grow: 1; */
 }
 
 .shortcuts {
-    max-width: 1rem;
-    flex-wrap: wrap;
-    flex-grow: 1;
+    min-width: 1rem;
+    margin: 0 1rem;
+    /* flex-wrap: wrap;
+    flex-grow: 1; */
     /* flex: 0 1 1.25rem; */
     /* flex-shrink: 1; */
     /* flex-direction: column; */
 }
 
+.shortcuts > img:first-child {
+    margin-right: 1rem;
+}
+
 .player {
-    max-width: 11.875rem;
+    padding: 0 1.25rem;
+    /* max-width: 11.875rem; */
     /* flex: 2 1 11.875rem; */
     /* flex-grow: 1; */
+}
+
+.player > div {
+    margin: 0 auto;
+}
+
+.player > div:first-child {
+    max-width: 11.875rem;
 }
 
 .player .ico:hover {
@@ -61,6 +80,7 @@
 
 .player .slidecontainer {
     padding: 0 .5rem;
+    width: 100%;
 }
 
 .player .slidecontainer > input {
@@ -68,7 +88,8 @@
 }
 
 .audio {
-    max-width: 9.375rem;
+    margin-left: auto;
+    /* max-width: 9.375rem; */
     column-gap: .375rem;
     /* flex: 1 1 9.375rem; */
     /* flex-grow: 2; */
@@ -126,3 +147,41 @@
     opacity: 1;
   }
 
+  @media  screen and (min-width: 552px) {
+    .current {
+        min-width: 7.5rem;
+    }
+    
+    .player {
+        min-width: 13.125rem;
+    }
+
+    .audio {
+        min-width: 11.5625rem;
+    }
+  }
+
+  @media  screen and (min-width: 640px) {
+    .shortcuts {
+        min-width: 3.125rem;
+    }
+    
+    .player {
+        min-width: 20rem;
+    }
+    
+    .audio {
+        min-width: 13.125rem;
+    }
+  }
+
+  @media  screen and (min-width: 878px) {
+    
+    .player {
+        min-width: 32.8125rem;
+    }
+    
+    .audio {
+        min-width: 13.125rem;
+    }
+  }
