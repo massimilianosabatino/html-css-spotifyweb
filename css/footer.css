@@ -1,4 +1,4 @@
 #control-nav {
-    height: 5.625rem;
+    height: var(--footer-heigth);
     background-color: #282828;
 }

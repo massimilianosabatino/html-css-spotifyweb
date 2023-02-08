@@ -1,8 +1,8 @@
 #side-nav {
     min-width: 3.125rem;
     background-color: #000;
-    height: calc(100vh - 5.625rem);
-    padding: .3125rem .625rem .625rem .625rem;
+    /* height: 100%; */
+    padding: 0 .625rem .625rem .625rem;
 }
 
 #side-nav nav .navigation span,
@@ -13,9 +13,13 @@
 }
 
 /*** LOGO ***/
+.logo-container {
+    width: 100%;
+    padding-top: .625rem;
+    padding-bottom: .9375rem;
+}
 .logo-link {
     width: 100%;
-    margin-bottom: .9375rem;
 }
 
 .logo {
@@ -26,7 +30,8 @@
 /*** Navigation ***/
 nav {
     width: 100%;
-    height: calc(100% - 2.8125rem);
+    /* height: 100%; */
+    /* height: calc(100% - 2.8125rem); */
 }
 
 nav img {
@@ -67,9 +72,15 @@ nav > * {
 }
 
 @media  screen and (min-width: 552px) {
+    .logo-container {
+        min-height: var(--header-heigth);
+        width: 100%;
+        padding-top: 1.25rem;
+    }
+
     #side-nav {
-        min-width: 14.375rem;
-        padding: 1.25rem 1.25rem .625rem 1.25rem;
+        max-width: 14.375rem;
+        padding: 0 1.25rem .625rem 1.25rem;
     }
 
     #side-nav nav .navigation span,

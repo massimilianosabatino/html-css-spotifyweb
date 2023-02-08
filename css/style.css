@@ -8,7 +8,9 @@
 *  Variabili
 */
 :root {
-    --text-color: #7D7F84
+    --text-color: #7D7F84;
+    --footer-heigth: 5.625rem;
+    --header-heigth: 5.625rem;
 }
 
 /*
