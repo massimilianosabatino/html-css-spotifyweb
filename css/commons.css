@@ -2,6 +2,10 @@
     display: flex;
 }
 
+.flex-dir-col {
+    flex-direction: column;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;

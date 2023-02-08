@@ -1,25 +1,20 @@
 #side-nav {
     min-width: 3.125rem;
     background-color: #000;
-    /* height: 100%; */
     padding: 0 .625rem .625rem .625rem;
 }
 
-#side-nav nav .navigation span,
-#side-nav nav .playlist,
-#side-nav nav .profile span,
-#side-nav nav .profile h3 {
+#side-nav .navigation span,
+#side-nav .playlist,
+#side-nav .profile span,
+#side-nav .profile h3 {
     display: none;
 }
 
 /*** LOGO ***/
 .logo-container {
-    width: 100%;
     padding-top: .625rem;
     padding-bottom: .9375rem;
-}
-.logo-link {
-    width: 100%;
 }
 
 .logo {
@@ -27,31 +22,44 @@
     max-width: 1.875rem;
 }
 
+.logo-big {
+    display: none;
+    max-width: 8.125rem;
+}
+
 /*** Navigation ***/
-nav {
-    width: 100%;
-    /* height: 100%; */
-    /* height: calc(100% - 2.8125rem); */
-}
-
-nav img {
+nav div + * img {
     max-height: 1.5625rem;
-}
-
-nav > * {
-    width: 100%;
 }
 
 .navigation li {
     margin: .75rem 0;
 }
 
-/*** Playlist ***/
+.navigation li:hover {
+    border-left: 2px solid var(--hover-color);
+}
 
+.navigation li > * {
+    vertical-align: middle;
+}
+
+/*** Playlist ***/
+.playlist h3 {
+    color: #fff;
+}
+
+ul.playlist a:not(:first-child) li:hover {
+    border-left: 2px solid var(--hover-color);
+}
 
 /*** Profile ***/
 .profile {
-    align-self: flex-end;
+    margin-top: auto;
+}
+
+.profile li > * {
+    vertical-align: middle;
 }
 
 .profile-ico {
@@ -63,35 +71,55 @@ nav > * {
 
 .profile a:first-child li {
     text-align: center;
-    padding-bottom: calc(1.25rem / 2);
+    padding-bottom: .625rem;
     margin-bottom: 1.25rem;
-    border-bottom: 1px solid var(--text-color);
 }
+
 .profile a:first-child li img {
     max-width: .75rem;
 }
 
+
+/*** Media queries ***/
 @media  screen and (min-width: 552px) {
     .logo-container {
         min-height: var(--header-heigth);
-        width: 100%;
         padding-top: 1.25rem;
+        padding-left: 1.25rem;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo-big {
+        display: block;
     }
 
     #side-nav {
-        max-width: 14.375rem;
-        padding: 0 1.25rem .625rem 1.25rem;
+        width: 14.375rem;
+        padding: 0 1.25rem .625rem 0;
     }
 
-    #side-nav nav .navigation span,
-    #side-nav nav .playlist,
-    #side-nav nav .profile span,
-    #side-nav nav .profile h3 {
+    #side-nav .playlist h3,
+    #side-nav .profile {
+        padding-left: 1.25rem;
+    }
+
+    #side-nav ul:not(.profile) li {
+        padding-left: 1.25rem;
+    }
+
+    #side-nav .navigation span,
+    #side-nav .playlist,
+    #side-nav .profile span,
+    #side-nav .profile h3 {
             display: initial;   
     }
 
     .profile a:first-child li {
         text-align: inherit;
+        border-bottom: 1px solid var(--text-color);
     }
 }
 

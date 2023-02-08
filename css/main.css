@@ -1,16 +1,16 @@
 main {
     height: calc(100vh - var(--footer-heigth) );
+    overflow: hidden;
 }
+
 #main-content {
     width: calc(100% - 3.125rem);
+    width: 100%;
     background-color: #141922;
     padding: 6.875rem 1.25rem 0 1.25rem;
 }
 
 #tabs h3 {
-    font-size: .8125rem;
-    font-weight: 600;
-    color: var(--text-color);
     padding: 0 1.25rem;
     text-transform: uppercase;
 }
@@ -26,4 +26,10 @@ article {
 .cover-art img {
     max-width: 100%;
     object-fit: cover;
+}
+
+@media  screen and (min-width: 552px) {
+    #main-content {
+    width: calc(100% - 14.375rem); 
+}
 }
