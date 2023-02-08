@@ -97,8 +97,45 @@
             </div>
         </section>
     </main>
-    <footer id="control-nav">
-
+    <footer id="control-nav" class="d-flex">
+        <div class="current d-flex">
+            <div class="col">
+                <img src="img/sinister.jpeg" alt="Sinister cover">
+            </div>
+            <div class="col">
+                <h4>Sinister</h4>
+                <h5>Brano</h5>
+                <h5>Nome</h5>
+            </div>
+        </div>
+        <div class="shortcuts d-flex">
+            <img src="img/heart.svg" class="ico" alt="Heart icon">
+            <img src="img/folder.svg" class="ico" alt="Folder icon">
+        </div>
+        <div class="player">
+            <div class="row-single justify-between align-center">
+                <img src="img/random.svg" class="ico" alt="Random icon">
+                <img src="img/skip-back.svg" class="ico" alt="Back icon">
+                <img src="img/play.svg" class="ico-big" alt="Play icon">
+                <img src="img/skip-forward.svg" class="ico" alt="Foward icon">
+                <img src="img/repeat.svg" class="ico" alt="Repeat icon">
+            </div>
+            <div class="row-single align-center">
+                <span>0:25</span>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
+                <span>4:35</span>
+            </div>
+        </div>
+        <div class="audio d-flex align-center">
+            <img src="img/list.svg" class="ico" alt="List icon">
+            <img src="img/display-material.svg" class="ico" alt="Display icon">
+            <img src="img/volume-up.svg" class="ico" alt="Volume icon">
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            </div>
+        </div>
     </footer>
 </body>
 </html>

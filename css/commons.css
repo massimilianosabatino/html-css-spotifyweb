@@ -11,12 +11,20 @@
     flex-wrap: wrap;
 }
 
+.row-single {
+    display: flex;
+}
+
 .justify-center {
     justify-content: center;
 }
 
+.justify-between {
+    justify-content: space-between;
+}
+
 .align-center {
-    align-content: center;
+    align-items: center;
 }
 
 .wrap {

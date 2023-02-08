@@ -75,3 +75,21 @@ nav li {
     font-weight: 600;
     color: var(--text-color);
 }
+
+h4 {
+    font-size: .75rem;
+    font-weight: 700;
+    color: #F4F4F4;
+}
+
+h5 {
+    font-size: .625rem;
+    font-weight: 700;
+    color: #848484;
+}
+
+.player div > span {
+    font-size: .625rem;
+    font-weight: 700;
+    color: #FFF;
+}
