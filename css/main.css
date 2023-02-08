@@ -3,6 +3,10 @@ main {
     overflow: hidden;
 }
 
+
+/*
+*  Finestra principale
+*/
 #main-content {
     width: calc(100% - 3.125rem);
     width: 100%;
@@ -15,10 +19,14 @@ main {
     text-transform: uppercase;
 }
 
+/*
+*  Componente canzone
+*/
 article {
     width: calc(100% / 2);
     padding: 0 .625rem;
 }
+
 .cover-art {
     max-width: 13.4375rem;
 }
@@ -28,6 +36,10 @@ article {
     object-fit: cover;
 }
 
+
+/*
+*  Media queries
+*/
 @media  screen and (min-width: 552px) {
     #main-content {
     width: calc(100% - 14.375rem); 

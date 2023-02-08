@@ -7,6 +7,10 @@ header {
     right: 0;
 }
 
+
+/*
+*  Media queries
+*/
 @media  screen and (min-width: 552px) {
     header {
         width: calc(100% - 14.375rem);

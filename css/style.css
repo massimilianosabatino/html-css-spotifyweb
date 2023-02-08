@@ -32,10 +32,6 @@ a:hover {
     text-decoration: none;
 }
 
-/* a:active {
-    color: var(--text-color);
-} */
-
 ul {
     list-style: none;
 }
@@ -58,7 +54,13 @@ body {
 /*
 *  Typo
 */
-
+h2{
+    font-size: 1.4375rem;
+    font-weight: 700;
+    color: #FFF;
+    margin-top: 2.5rem;
+    margin-bottom: 1.875rem;
+} 
 h3 {
     font-size: .8125rem;
     font-weight: 600;

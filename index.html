@@ -17,13 +17,17 @@
 
     </header>
     <main class="d-flex">
+        <!-- Barra di navigazione laterale -->
         <nav id="side-nav" class="d-flex flex-dir-col">
+            <!-- Logo principale -->
             <div class="logo-container">
                 <a href="#" class="logo-link">
                     <img src="img/logo-small.svg" class="logo" alt="Logo Spotify">
                     <img src="img/logo.svg" class="logo-big" alt="Logo Spotify">
                 </a>
             </div>
+            <!-- /Logo principale -->
+            <!-- Navigazione generale -->
             <ul class="navigation">
                 <a href="#">
                     <li>
@@ -44,6 +48,8 @@
                     </li>
                 </a>
             </ul>
+            <!-- /Navigazione generale -->
+            <!-- Elenco playlist -->
             <div class="playlist">
                 <h3>PLAYLIST</h3>
             </div>
@@ -59,6 +65,8 @@
                 <a href="#"><li>Nome PLaylist</li></a>
                 <a href="#"><li>Nome PLaylist</li></a>                 
             </ul>
+            <!-- /Elenco playlist -->
+            <!-- Gestione profilo -->
             <ul class="profile">
                 <a href="#">
                     <li>
@@ -73,7 +81,10 @@
                     </li>
                 </a>
             </ul>
+            <!-- Gestione profilo -->
         </nav>
+        <!-- /Barra di navigazione laterale -->
+        <!-- Finestra principale -->
         <section id="main-content">
             <div id="tabs" class="row justify-center">
                 <h3>In evidenza</h3>
@@ -96,9 +107,12 @@
                 </div>
             </div>
         </section>
+        <!-- /Finestra principale -->
     </main>
+    <!-- Controlli di riproduzione -->
     <footer id="control-nav" class="d-flex">
         <div class="control-left d-flex">
+            <!-- In riproduzione -->
             <div class="current d-flex">
                 <div class="col">
                     <img src="img/sinister.jpeg" alt="Sinister cover">
@@ -109,12 +123,16 @@
                     <h5>Nome</h5>
                 </div>
             </div>
+            <!-- /In riproduzione -->
+            <!-- Aggiunta preferiti -->
             <div class="shortcuts d-flex wrap">
                 <img src="img/heart.svg" class="ico" alt="Heart icon">
                 <img src="img/folder.svg" class="ico" alt="Folder icon">
             </div>
+            <!-- /Aggiunta preferiti -->
         </div>
         <div class="player">
+            <!-- Icone di controllo brano -->
             <div class="row-single justify-between align-center">
                 <img src="img/random.svg" class="ico" alt="Random icon">
                 <img src="img/skip-back.svg" class="ico" alt="Back icon">
@@ -122,6 +140,8 @@
                 <img src="img/skip-forward.svg" class="ico" alt="Foward icon">
                 <img src="img/repeat.svg" class="ico" alt="Repeat icon">
             </div>
+            <!-- /Icone di controllo brano -->
+            <!-- Tempo brano -->
             <div class="row-single justify-center align-center">
                 <span>0:25</span>
                 <div class="slidecontainer">
@@ -129,7 +149,9 @@
                 </div>
                 <span>4:35</span>
             </div>
+            <!-- /Tempo brano -->
         </div>
+        <!-- Controlli volume e audio -->
         <div class="audio d-flex align-center">
             <img src="img/list.svg" class="ico" alt="List icon">
             <img src="img/display-material.svg" class="ico" alt="Display icon">
@@ -138,6 +160,8 @@
                 <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
             </div>
         </div>
+        <!-- /Controlli volume e audio -->
     </footer>
+    <!-- Controlli di riproduzione -->
 </body>
 </html>
