@@ -112,6 +112,10 @@
 
 
 /*** Stile slider ***/
+.slidecontainer {
+    position: relative;
+}
+
 .slider {
     -webkit-appearance: none;
     width: 100%;
@@ -127,6 +131,33 @@
 .slider:hover {
     opacity: 1;
 }
+
+.player .slidecontainer:hover::before {
+    content: '';
+    display: block;
+    background-color: var(--hover-color);
+    width: 20%;
+    height: 4px;
+    position: absolute;
+    top: 48%;
+    left: 2%;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+
+.audio .slidecontainer:hover::before {
+    content: '';
+    display: block;
+    background-color: var(--hover-color);
+    width: 20%;
+    height: 4px;
+    position: absolute;
+    top: 48%;
+    left: 0;
+    border-radius: 4px;
+}
+
 .slider::-webkit-slider-thumb {
     opacity: 0;
 }
