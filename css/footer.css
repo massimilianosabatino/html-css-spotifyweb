@@ -135,7 +135,7 @@
     opacity: 1;
 }
 
-/* .player .slidecontainer:hover::before {
+.player .slidecontainer:hover::before {
     content: '';
     display: block;
     background-color: var(--hover-color);
@@ -159,7 +159,7 @@
     top: 48%;
     left: 0;
     border-radius: 4px;
-} */
+}
 
 .slider::-webkit-slider-thumb {
     opacity: 0;
