@@ -124,6 +124,9 @@ ul.playlist {
     max-width: .75rem;
 }
 
+.profile h3 {
+    color: #fff;
+}
 
 /*** Media queries ***/
 @media  screen and (min-width: 552px) {

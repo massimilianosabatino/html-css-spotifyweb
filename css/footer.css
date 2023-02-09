@@ -76,6 +76,7 @@
 
 .player > div:first-child {
     max-width: 11.875rem;
+    margin-bottom: .3125rem;
 }
 
 .player .ico:hover {

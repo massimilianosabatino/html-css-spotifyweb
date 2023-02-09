@@ -51,12 +51,26 @@ main {
     border-radius: 50%;
 }
 
+#popular {
+    margin-bottom: 2.5rem;
+}
+
 /*
 *  Componente canzone
 */
 article {
     width: calc(100% / 2);
     padding: 0 .625rem;
+    text-align: center;
+}
+
+article h4 {
+    margin-top: .9375rem;
+    margin-bottom: .3125rem;
+}
+
+article h5 {
+    margin-bottom: .3125rem;
 }
 
 .cover-art {
