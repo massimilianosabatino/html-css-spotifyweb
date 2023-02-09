@@ -12,11 +12,37 @@ main {
     width: 100%;
     background-color: #141922;
     padding: 6.875rem 1.25rem 0 1.25rem;
+    overflow: auto;
 }
 
 #tabs h3 {
     padding: 0 1.25rem;
+    margin-bottom: 1.25rem;
     text-transform: uppercase;
+    position: relative;
+}
+
+#tabs h3:hover::before {
+    content: "";
+    position: absolute;
+    left: 33%;
+    bottom: -0.3125rem;
+    width: 33%;
+    border-bottom: 2px solid var(--hover-color);
+    border-radius: .0625rem;
+}
+
+#recents > h2 {
+    margin-bottom: 2.5rem;
+}
+
+#for-you > h5,
+#popular > h5 {
+    margin-bottom: 2.5rem;
+}
+
+#popular img {
+    border-radius: 50%;
 }
 
 /*
@@ -29,11 +55,51 @@ article {
 
 .cover-art {
     max-width: 13.4375rem;
+    position: relative;
 }
 
 .cover-art img {
     max-width: 100%;
     object-fit: cover;
+}
+
+/*
+*  Hover caover art
+*/
+.cover-art:hover::before {
+    content: '';
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+}
+
+#popular .cover-art:hover::before {
+    content: '';
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: .5;
+}
+
+.cover-art:hover::after {
+    content: '';
+    background-image: url(../img/play.svg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    filter: invert(1);
+    opacity: .8;
 }
 
 
@@ -44,4 +110,16 @@ article {
     #main-content {
     width: calc(100% - 14.375rem); 
 }
+}
+
+@media  screen and (min-width: 640px) {
+    article {
+        width: calc(100% / 4);
+    }
+}
+
+@media  screen and (min-width: 878px) {
+    article {
+        width: calc(100% / 6);
+    }
 }
