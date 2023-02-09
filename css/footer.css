@@ -46,11 +46,20 @@
 
 }
 
+
+
+.current .col-mini:hover {
+    text-decoration: underline;
+}
+
 .shortcuts {
     min-width: 1rem;
     margin: 0 1rem;
 }
 
+#control-nav div.shortcuts .ico:hover {
+    filter: brightness(2);
+}
 
 /*
 *  Controlli di riproduzione
@@ -170,7 +179,7 @@
     .shortcuts > img:first-child {
         margin-right: 1rem;
     }
-    
+
     .player {
         min-width: 20rem;
     }
