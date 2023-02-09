@@ -65,11 +65,13 @@
 *  Controlli di riproduzione
 */
 .player {
+    max-width: 11.875rem;
     padding: 0 1.25rem;
 }
 
 .player > div {
     margin: 0 auto;
+
 }
 
 .player > div:first-child {
@@ -99,6 +101,7 @@
 .audio {
     margin-left: auto;
     column-gap: .375rem;
+    max-width: 9.375rem;
 }
 
 .audio .slidecontainer {
@@ -132,7 +135,7 @@
     opacity: 1;
 }
 
-.player .slidecontainer:hover::before {
+/* .player .slidecontainer:hover::before {
     content: '';
     display: block;
     background-color: var(--hover-color);
@@ -156,7 +159,7 @@
     top: 48%;
     left: 0;
     border-radius: 4px;
-}
+} */
 
 .slider::-webkit-slider-thumb {
     opacity: 0;
@@ -198,7 +201,7 @@
     }
 
     .audio {
-        min-width: 11.5625rem;
+        max-width: 11.5625rem;
     }
 }
 
@@ -216,7 +219,7 @@
     }
     
     .audio {
-        min-width: 13.125rem;
+        max-width: 13.125rem;
     }
 }
 
@@ -227,6 +230,6 @@
     }
     
     .audio {
-        min-width: 13.125rem;
+        max-width: 13.125rem;
     }
 }
