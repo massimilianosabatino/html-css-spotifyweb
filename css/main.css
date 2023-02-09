@@ -1,6 +1,6 @@
 main {
     height: calc(100vh - var(--footer-heigth) );
-    overflow: hidden;
+    overflow-y: hidden;
 }
 
 
@@ -12,7 +12,7 @@ main {
     width: 100%;
     background-color: #141922;
     padding: 6.875rem 1.25rem 0 1.25rem;
-    overflow: auto;
+    overflow-y: auto;
 }
 
 #tabs h3 {
@@ -20,6 +20,10 @@ main {
     margin-bottom: 1.25rem;
     text-transform: uppercase;
     position: relative;
+}
+
+#tabs h3:hover {
+    color: #fff;
 }
 
 #tabs h3:hover::before {
@@ -31,6 +35,8 @@ main {
     border-bottom: 2px solid var(--hover-color);
     border-radius: .0625rem;
 }
+
+/*** Manca funzione per evidenziare tab attiva, non gestibile solo in CSS ***/
 
 #recents > h2 {
     margin-bottom: 2.5rem;
@@ -66,6 +72,12 @@ article {
 /*
 *  Hover caover art
 */
+.cover-art::before {
+    content: '';
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
 .cover-art:hover::before {
     content: '';
     background-color: black;
@@ -99,7 +111,7 @@ article {
     height: 50%;
     transform: translate(-50%, -50%);
     filter: invert(1);
-    opacity: .8;
+    opacity: 1;
 }
 
 

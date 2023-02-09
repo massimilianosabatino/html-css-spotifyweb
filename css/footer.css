@@ -51,10 +51,6 @@
     margin: 0 1rem;
 }
 
-.shortcuts > img:first-child {
-    margin-right: 1rem;
-}
-
 
 /*
 *  Controlli di riproduzione
@@ -169,6 +165,10 @@
 @media  screen and (min-width: 640px) {
     .shortcuts {
         min-width: 3.125rem;
+    }
+    
+    .shortcuts > img:first-child {
+        margin-right: 1rem;
     }
     
     .player {

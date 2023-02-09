@@ -32,7 +32,7 @@ nav div + * img {
     max-height: 1.5625rem;
 }
 
-.navigation li {
+.navigation a:not(:first-child) li {
     margin: .75rem 0;
 }
 
@@ -44,17 +44,27 @@ nav div + * img {
     vertical-align: middle;
 }
 
+.navigation li:hover span {
+    color: #fff;
+}
+
 /*** Playlist ***/
 .playlist h3 {
     color: #fff;
 }
 
-ul.playlist a:not(:first-child) li:hover {
+ul.playlist a li:hover {
     border-left: 2px solid var(--hover-color);
+    color: #fff;
 }
+/*** Se crea playlist deve stare all'interno ***/
+/* ul.playlist a:not(:first-child) li:hover {
+    border-left: 2px solid var(--hover-color);
+    color: #fff;
+} */
 
 ul.playlist {
-    overflow: auto;
+    overflow-y: auto;
 }
 
 /*** Profile ***/
@@ -64,6 +74,10 @@ ul.playlist {
 
 .profile li > * {
     vertical-align: middle;
+}
+
+.profile li:hover span {
+    color: #fff;
 }
 
 .profile-ico {
@@ -106,6 +120,7 @@ ul.playlist {
     }
 
     #side-nav .playlist h3,
+    #side-nav div.playlist > a,
     #side-nav .profile {
         padding-left: 1.25rem;
     }
